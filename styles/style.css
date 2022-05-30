@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 2% auto;
+    width: 40%;
+}
+
+.settings {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3%;
+}
+.time {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+button {
+    font-size: 20px;
+    padding: 1%;
+    border: 1px solid gray;
+    background-color: #fff;
+}
+
+.app-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.app-dialog__body {
+    display: flex;
+    flex-direction: column;
+    width: 86vmin;
+    padding: 16px;
+    border-radius: 8px;
+    z-index: 1;
+    background-color: #fff;
+}
+  
+.app-dialog__overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.app-dialog__container {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 5% 0;
+    font-size: 18px;
+}
+
+input, select {
+    padding: 1%;
+    font-size: 18px;
+    background-color: #fff;
+    border: 1px solid gray;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto 2%;
+    width: 50%;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.3);
+
+}
