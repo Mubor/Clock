@@ -5,8 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="settings">
+            <button id="alarm">Set alarm</button>
+        </div>
+        <div class="time"></div>
+    </div>
+    <div role="dialog" class="app-dialog">
+        <div class="app-dialog__overlay">
+          <div class="app-dialog__body">
+              <h2 id="message">Set alarm</h2>
+              <form name="settings">
+                <div class="app-dialog__container">
+                    <input type="number" name="hours" max="23" value="00" required> :
+                    <input type="number" name="minutes" max="59" value="00" required> :
+                    <input type="number" name="seconds"  max="59" value="00" required>
+                </div>
+                <label for="repeat">
+                    <input type="checkbox" name="repeat" id="repeat"> Repeat 
+                </label>
+                <label for="button">
+                    <input type="submit" value="Set" id="button">
+                </label>
+              </form>
+          </div>
+        </div>
+    </div>
+    <script src="src/former.js"></script>
+    <script src="src/index.js"></script>
 </body>
 </html>
